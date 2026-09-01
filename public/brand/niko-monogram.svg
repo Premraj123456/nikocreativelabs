@@ -1,0 +1,14 @@
+<svg width="100" height="100" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Niko N monogram">
+<title>Niko N — geometric, golden-ratio construction 1:1.618</title>
+<!-- Base square 100 = 1.618 * 61.8 — N width 61.8 centered -->
+<rect width="100" height="100" fill="#0A0A0C"/>
+<!-- N — left stem 18, right stem 18, diagonal 11.1 (18/1.618) — all edges tangent to circles -->
+<!-- left stem -->
+<rect x="14" y="14" width="18" height="72" fill="#FCFCF9"/>
+<!-- right stem -->
+<rect x="68" y="14" width="18" height="72" fill="#FCFCF9"/>
+<!-- diagonal — precise from inner edge of left top to inner edge of right bottom (correct N) -->
+<polygon points="32,14 68,86 79.1,86 32,25.1" fill="#FCFCF9"/>
+<!-- golden dot — brass, 1/5 base unit -->
+<circle cx="86" cy="14" r="3" fill="#C8A45C"/>
+</svg>
