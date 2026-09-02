@@ -1,1 +1,8 @@
 node_modules/
+
+# image gen creds
+.env.local
+.env
+.env.local
+.next
+tsconfig.tsbuildinfo
