@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "The Brand Commercial Package — Niko Creative Labs",
+  title: "Niko Funnel — Brand Commercial Package — Niko Creative Labs",
   description: "3 AI-produced brand commercials + 5 short-form cuts. Starting at $799. Your product finally looks like a real brand.",
 };
 
@@ -37,7 +37,7 @@ export default function BrandCommercial() {
         </p>
 
         <div className="border-2 border-[#1A1A1A] p-6 md:p-8 mb-10">
-          <h3 className="text-xl font-bold mb-4">The Brand Commercial Package</h3>
+          <h3 className="text-xl font-bold mb-4">Niko Funnel — Brand Commercial Package</h3>
           <p className="text-lg leading-relaxed mb-4">
             Three AI-produced commercials for your brand — shot, directed, and edited like a real production house would. The difference is the camera is AI (Seedance, the same engine ByteDance built), and we&apos;re the directors — so your cost is roughly <strong>one-tenth</strong> of a traditional shoot.
           </p>
