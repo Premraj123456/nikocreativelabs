@@ -32,6 +32,7 @@ export function About() {
 export function Contact() {
   const [s, setS] = useState<"idle" | "sending" | "sent" | "error">("idle");
   const [m, setM] = useState("");
+  const [ph, setPh] = useState("");
   async function onSubmit(e: React.FormEvent<HTMLFormElement>) {
     e.preventDefault();
     const fd = new FormData(e.currentTarget);
@@ -44,6 +45,7 @@ export function Contact() {
       const j = await r.json();
       if (!r.ok) throw new Error(j.error || "Failed");
       setS("sent");
+      setPh(typeof p.phone === "string" ? p.phone : "");
       (e.target as HTMLFormElement).reset();
     } catch (err: any) { setS("error"); setM(err.message || "Failed"); }
   }
@@ -81,7 +83,7 @@ export function Contact() {
             </div>
             <label className="block mt-4 font-mono text-[10px] tracking-[0.08em] text-faint">BRIEF *<textarea name="brief" rows={4} required placeholder="WHAT ARE YOU BUILDING?" className="mt-1 w-full border border-line bg-paper px-3 py-3 font-mono text-[11px] text-ink placeholder:text-faint focus:outline-none focus:border-ink resize-none" /></label>
             <button disabled={s === "sending" || s === "sent"} className="mt-4 w-full bg-ink text-paper font-mono text-[11px] tracking-[0.08em] py-3 hover:bg-black disabled:opacity-60 transition font-medium">{s === "sending" ? "TRANSMITTING..." : s === "sent" ? "SENT — WE'LL CALL IN 24H" : "SEND REQUISITION →"}</button>
-            {s === "sent" && <p className="mt-2 text-center font-mono text-[11px] text-green-600">Received — we&apos;ll call +91 70360 24586 in 24h.</p>}
+            {s === "sent" && <p className="mt-2 text-center font-mono text-[11px] text-green-600">Received — {ph ? <>we&apos;ll call {ph} in 24h.</> : <>we&apos;ll be in touch in 24h.</>}</p>}
             {s === "error" && <p className="mt-2 text-center font-mono text-[11px] text-red-600">{m}</p>}
             <p className="mt-2 text-center font-mono text-[10px] text-faint">Or email directly: hello@nikocreativelabs.com</p>
           </form>
