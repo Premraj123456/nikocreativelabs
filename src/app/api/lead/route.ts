@@ -22,17 +22,19 @@ export async function POST(req: Request) {
       timestamp: new Date().toISOString(),
     };
 
-    // Ensure data dir exists
-    const dir = path.dirname(LEADS_FILE);
-    if (!fs.existsSync(dir)) fs.mkdirSync(dir, { recursive: true });
-
-    // Read existing, append, write
-    let leads: typeof lead[] = [];
-    if (fs.existsSync(LEADS_FILE)) {
-      leads = JSON.parse(fs.readFileSync(LEADS_FILE, "utf-8"));
+    // Best-effort local log (server filesystems are read-only/ephemeral — never fail the lead on this)
+    try {
+      const dir = path.dirname(LEADS_FILE);
+      if (!fs.existsSync(dir)) fs.mkdirSync(dir, { recursive: true });
+      let leads: typeof lead[] = [];
+      if (fs.existsSync(LEADS_FILE)) {
+        leads = JSON.parse(fs.readFileSync(LEADS_FILE, "utf-8"));
+      }
+      leads.push(lead);
+      fs.writeFileSync(LEADS_FILE, JSON.stringify(leads, null, 2));
+    } catch (e) {
+      console.log("[LEAD-FILE-SKIPPED]", (e as Error).message);
     }
-    leads.push(lead);
-    fs.writeFileSync(LEADS_FILE, JSON.stringify(leads, null, 2));
 
     console.log(`[LEAD] ${email}${website ? ` | ${website}` : ""}`);
 
