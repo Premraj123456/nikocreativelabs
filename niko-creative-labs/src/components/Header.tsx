@@ -17,7 +17,7 @@ export function Header() {
           <a href="#process" className="hover:text-ink transition">Process</a>
         </nav>
         <div className="hidden md:flex items-center gap-3">
-          <a href="tel:+918035087949" className="font-mono text-[11px] tracking-[0.06em] text-ink border border-line px-4 py-2 hover:bg-surface transition">+91 80350 87949</a>
+          <a href="tel:+917036024586" className="font-mono text-[11px] tracking-[0.06em] text-ink border border-line px-4 py-2 hover:bg-surface transition">+91 70360 24586</a>
           <a href="#contact" className="bg-ink text-paper font-mono text-[11px] tracking-[0.06em] px-5 py-2 hover:bg-black transition">START PROJECT</a>
         </div>
         <button onClick={() => setO(!o)} className="md:hidden p-2 border border-line text-ink">{o ? <X size={16} /> : <Menu size={16} />}</button>
@@ -28,7 +28,7 @@ export function Header() {
           <a href="#work" onClick={() => setO(false)} className="block py-3 border-b border-line">Work</a>
           <a href="#process" onClick={() => setO(false)} className="block py-3 border-b border-line">Process</a>
           <a href="#contact" onClick={() => setO(false)} className="block bg-ink text-paper text-center py-3 mt-3">START PROJECT</a>
-          <a href="tel:+918035087949" className="block border border-line text-center py-3">+91 80350 87949</a>
+          <a href="tel:+917036024586" className="block border border-line text-center py-3">+91 70360 24586</a>
         </div>
       )}
     </header>
