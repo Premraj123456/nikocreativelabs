@@ -56,7 +56,7 @@ export function Contact() {
             <h2 className="font-display text-[28px] leading-none tracking-[-0.02em] text-ink mt-3">Let&apos;s power<br />your brand.</h2>
             <p className="font-mono text-[11px] leading-5 text-muted mt-3">Website, film, short, ad, or full engine. Reply in 24h. Custom quotes only.</p>
             <div className="mt-6 space-y-2">
-              <a href="tel:+918035087949" className="flex justify-between items-center bg-ink text-paper px-4 py-3 font-mono text-[11px] hover:bg-black transition"><span>CALL — LAB LINE</span><span className="font-medium">+91 80350 87949</span></a>
+              <a href="tel:+917036024586" className="flex justify-between items-center bg-ink text-paper px-4 py-3 font-mono text-[11px] hover:bg-black transition"><span>CALL — LAB LINE</span><span className="font-medium">+91 70360 24586</span></a>
               <a href="mailto:hello@nikocreativelabs.com" className="flex justify-between items-center border border-line bg-white px-4 py-3 font-mono text-[11px] hover:bg-surface transition"><span className="text-muted">EMAIL</span><span className="text-ink font-medium">hello@nikocreativelabs.com</span></a>
             </div>
             <div className="mt-4 bg-white border border-line p-3 font-mono text-[10px] leading-5 text-muted">We power brands & films that need video at core. If your story lives on screen — product, service, short, ad — we&apos;re your lab.</div>
@@ -81,7 +81,7 @@ export function Contact() {
             </div>
             <label className="block mt-4 font-mono text-[10px] tracking-[0.08em] text-faint">BRIEF *<textarea name="brief" rows={4} required placeholder="WHAT ARE YOU BUILDING?" className="mt-1 w-full border border-line bg-paper px-3 py-3 font-mono text-[11px] text-ink placeholder:text-faint focus:outline-none focus:border-ink resize-none" /></label>
             <button disabled={s === "sending" || s === "sent"} className="mt-4 w-full bg-ink text-paper font-mono text-[11px] tracking-[0.08em] py-3 hover:bg-black disabled:opacity-60 transition font-medium">{s === "sending" ? "TRANSMITTING..." : s === "sent" ? "SENT — WE'LL CALL IN 24H" : "SEND REQUISITION →"}</button>
-            {s === "sent" && <p className="mt-2 text-center font-mono text-[11px] text-green-600">Received — we&apos;ll call +91 80350 87949 in 24h.</p>}
+            {s === "sent" && <p className="mt-2 text-center font-mono text-[11px] text-green-600">Received — we&apos;ll call +91 70360 24586 in 24h.</p>}
             {s === "error" && <p className="mt-2 text-center font-mono text-[11px] text-red-600">{m}</p>}
             <p className="mt-2 text-center font-mono text-[10px] text-faint">Or email directly: hello@nikocreativelabs.com</p>
           </form>
