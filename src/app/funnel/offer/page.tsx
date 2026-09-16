@@ -68,10 +68,10 @@ export default function BrandCommercial() {
           </div>
 
           <a
-            href="/#contact"
+            href="tel:+917036024586"
             className="block w-full text-center py-3 bg-[#1A1A1A] text-white font-bold text-base hover:bg-[#333] transition-colors"
           >
-            Get Custom Quote →
+            Get Custom Quote — Call +91 70360 24586 →
           </a>
           <p className="text-sm text-[#999] mt-3 text-center">Not sure? Start with the $79 Spec — see your product as a commercial in 48 hours. <a href="/thanks" className="underline">Get spec →</a></p>
         </div>

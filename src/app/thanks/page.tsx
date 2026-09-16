@@ -71,7 +71,7 @@ export default function Thanks() {
         </div>
 
         <p className="text-xs text-[#999] mt-16">
-          Niko Creative Labs. If the scorecard doesn&apos;t arrive, check spam and mark as not spam.
+          Niko Creative Labs. If the scorecard doesn&apos;t arrive, check spam and mark as not spam. Questions? <a href="tel:+917036024586" className="underline">Call +91 70360 24586</a>.
         </p>
 
       </div>

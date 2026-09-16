@@ -89,7 +89,7 @@ export default function Home() {
         </div>
 
         <p className="text-xs text-[#999] mt-16">
-          Niko Creative Labs — AI-produced brand commercials. No spam, ever.
+          Niko Creative Labs — AI-produced brand commercials. Questions? <a href="tel:+917036024586" className="underline">Call +91 70360 24586</a>. No spam, ever.
         </p>
 
       </div>
