@@ -5,6 +5,7 @@ const inter = Inter({ subsets: ["latin"], variable: "--font-sans", display: "swa
 const display = Instrument_Serif({ weight: "400", subsets: ["latin"], variable: "--font-display", display: "swap" });
 const mono = JetBrains_Mono({ subsets: ["latin"], variable: "--font-mono", display: "swap" });
 export const metadata: Metadata = {
+  metadataBase: new URL("https://nikocreativelabs.com"),
   title: {
     default: "Niko Creative Labs — AI Brand Commercials That Actually Convert",
     template: "%s — Niko Creative Labs",

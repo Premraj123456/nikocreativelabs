@@ -92,7 +92,7 @@ Count your YES answers (treat questions 4 and 8 as "yes" if you answered NO — 
 If you scored 4 or above, we can tell you exactly what to fix and how. 
 That's what we do at Niko Creative Labs.
 
-→ niko-creative-labs.vercel.app
+→ https://nikocreativelabs.com
 
 ---
 
