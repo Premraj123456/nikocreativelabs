@@ -19,10 +19,13 @@ export default function WorkPage({ params }: { params: { slug: string } }) {
             <span>{w.tag.toUpperCase()} — {w.status.toUpperCase()}</span>
             <span>{w.year}</span>
           </div>
-          <div className={`h-[240px] border-b border-ink flex items-center justify-center text-center p-8 ${w.slug === "noir-watch" ? "bg-zinc-800 text-paper" : w.slug === "echo-short" ? "bg-indigo-950 text-paper" : "bg-zinc-700 text-paper"}`}>
+          <div className="border-b border-ink bg-black">
+            <video controls playsInline preload="metadata" className="w-full max-h-[70vh] bg-black" src={w.slug === "glam-factor-sale" ? "/videos/glam-factor-sale.mp4" : w.slug === "noir-watch" ? "/videos/noir.mp4" : w.slug === "echo-short" ? "/videos/echo.mp4" : "/videos/velvet.mp4"} />
+          </div>
+          <div className="border-b border-ink flex items-center justify-center text-center p-8 bg-surface">
             <div>
-              <div className="font-display text-[32px]">{w.title}</div>
-              <div className="font-mono text-[11px] tracking-[0.12em] text-paper/60 mt-2">{w.category} • {w.status.toUpperCase()}</div>
+              <div className="font-display text-[32px] text-ink">{w.title}</div>
+              <div className="font-mono text-[11px] tracking-[0.12em] text-muted mt-2">{w.category} • {w.status.toUpperCase()}</div>
             </div>
           </div>
           <div className="p-6 md:p-8">
@@ -57,8 +60,8 @@ export default function WorkPage({ params }: { params: { slug: string } }) {
               </div>
             </div>
             <div className="mt-8 border border-ink bg-ink text-paper p-4 flex flex-wrap justify-between items-center gap-3">
-              <div className="font-display text-[16px]">Your project becomes the next sheet.</div>
-              <a href="/#contact" className="bg-paper text-ink font-mono text-[11px] px-4 py-2">START REQUISITION →</a>
+              <div className="font-display text-[16px]">Have something to sell? Let's film it properly.</div>
+              <a href="/#contact" className="bg-paper text-ink font-mono text-[11px] px-4 py-2">Enquire →</a>
             </div>
           </div>
         </div>
