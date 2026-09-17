@@ -8,9 +8,9 @@ import { About, Contact } from "@/components/AboutContact";
 import { Footer } from "@/components/Footer";
 
 export const metadata: Metadata = {
-  title: "Niko Creative Labs — AI-Native Studio for Websites, Films & Commercials",
+  title: "Niko Creative Labs — Ads That Make You Look National | 15s/30s Commercials",
   description:
-    "AI-native studio with human taste. High-end websites, AI films, ad commercials and full growth engines. 7-day sprints, custom quotes.",
+    "Premium 15s/30s commercials, high-end websites and monthly content engines. 7-day delivery from Rs 49k. For salons, D2C, builders, clinics.",
 };
 
 export default function Home() {

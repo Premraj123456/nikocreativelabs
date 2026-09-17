@@ -9,21 +9,21 @@ export function Hero() {
         <div className="max-w-[720px]">
           <div className="inline-flex items-center gap-2 font-mono text-[11px] tracking-[0.12em] text-muted">
             <span className="h-1.5 w-1.5 rounded-full bg-brass" />
-            AI-NATIVE TECHNOLOGY POWERHOUSE — HYD → GLOBAL
+            PREMIUM COMMERCIALS — HYD → GLOBAL
           </div>
           <h1 className="font-display text-[38px] sm:text-[52px] md:text-[64px] leading-[0.9] tracking-[-0.04em] text-ink mt-4">
-            Films that don&apos;t feel<br />
-            like AI<span className="text-brass">.</span>
+            Ads that make you<br />
+            look national<span className="text-brass">.</span>
           </h1>
           <p className="font-mono text-[11px] leading-6 text-muted mt-4 max-w-[560px]">
-            We design high-end websites that sell, direct realistic AI films & ad commercials that hold, and build the marketing engines that scale them — for brands, filmmakers, and anyone video-core.
+            15s / 30s commercials, high-end websites and monthly content engines — for salons, D2C, builders and clinics that want premium image. 7-day delivery, from Rs 49k.
           </p>
           <div className="mt-6 flex flex-wrap gap-3">
             <a href="#contact" className="inline-flex items-center gap-2 bg-ink text-paper font-mono text-[11px] tracking-[0.06em] px-6 py-3 hover:bg-black transition">START PROJECT <ArrowRight size={14} /></a>
             <button onClick={() => setOpen(true)} className="inline-flex items-center gap-2 border border-line bg-white font-mono text-[11px] tracking-[0.06em] px-6 py-3 hover:bg-surface transition text-ink"><Play size={14} className="fill-ink" /> WATCH REEL — 12S</button>
           </div>
           <div className="mt-6 flex gap-6 font-mono text-[10px] tracking-[0.1em] text-faint">
-            <span>CUSTOM QUOTE ONLY</span><span>•</span><span>7-DAY SPRINTS</span><span>•</span><span>SHOT-BY-SHOT</span>
+            <span>FROM RS 49K</span><span>•</span><span>7-DAY DELIVERY</span><span>•</span><span>4 SLOTS / MONTH</span>
           </div>
         </div>
 
@@ -43,8 +43,8 @@ export function Hero() {
             </div>
           </div>
           <div className="flex flex-col md:flex-row justify-between gap-2 mt-3 font-mono text-[10px] tracking-[0.08em] text-faint">
-            <span>For brands • Films • Founders — anything video-core.</span>
-            <span className="text-muted">Direction, not generation. Invisible AI.</span>
+            <span>For salons • D2C • Builders • Clinics — anything that needs premium image.</span>
+            <span className="text-muted">Directed like a film set. Delivered in 7 days.</span>
           </div>
         </div>
       </div>
