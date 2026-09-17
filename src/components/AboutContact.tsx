@@ -22,7 +22,7 @@ export function About() {
               <div><span className="text-paper">Craft.</span> <span className="text-white/60">Light, texture and sound — the details that read as premium.</span></div>
               <div><span className="text-paper">Follow-through.</span> <span className="text-white/60">A film, a page and content that work together.</span></div>
             </div>
-            <div className="mt-6 border border-white/10 bg-white/5 p-3 font-mono text-[10px] leading-4 text-white/60">Auteur + Seedance 2.5 • Direction, not generation • Hyderabad → Global • Lab 001</div>
+            <div className="mt-6 border border-white/10 bg-white/5 p-3 font-mono text-[10px] leading-4 text-white/60">Hyderabad • Working everywhere • 7-day delivery</div>
           </div>
         </div>
       </div>
