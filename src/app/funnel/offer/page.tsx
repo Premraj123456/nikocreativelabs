@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 
 export const metadata: Metadata = {
   title: "Niko Funnel — Brand Commercial Package — Niko Creative Labs",
-  description: "3 AI-produced brand commercials + 5 short-form cuts. Starting at $799. Your product finally looks like a real brand.",
+  description: "3 commercials + 5 short-form cuts. From Rs 49k. Your product finally looks like a national brand.",
 };
 
 export default function BrandCommercial() {
@@ -27,7 +27,7 @@ export default function BrandCommercial() {
           You tell yourself it&apos;s the algorithm. But you pull up their video and your video side by side, and something sinks in: theirs <em>looks like a brand</em>. Yours looks like someone filmed it in their living room. Which, to be fair, you did.
         </p>
         <p className="text-lg leading-relaxed mb-4">
-          <strong>A real commercial shoot costs $15k–$40k.</strong> Crew. Lighting. A DOP who knows what they&apos;re doing. Location permits. Talent. Post-production. Revisions. For most brands doing $10k–$50k/mo, that math doesn&apos;t work. So you stay stuck with phone footage, telling yourself you&apos;ll do it &quot;once we scale.&quot;
+          <strong>A real commercial shoot costs Rs 8-15L.</strong> Crew. Lighting. A DOP who knows what they&apos;re doing. Location permits. Talent. Post-production. Revisions. For most brands doing $10k–$50k/mo, that math doesn&apos;t work. So you stay stuck with phone footage, telling yourself you&apos;ll do it &quot;once we scale.&quot;
         </p>
         <p className="text-lg leading-relaxed mb-4">
           But here&apos;s the trap: <strong>you can&apos;t scale without the commercial.</strong> Better video → more trust → higher conversion → more revenue → now you can afford the traditional shoot. The video comes first. Not after.
@@ -63,8 +63,8 @@ export default function BrandCommercial() {
           </div>
 
           <div className="bg-[#F5F5F0] p-4 mb-5">
-            <p className="text-3xl font-bold mb-1">Starting at $799</p>
-            <p className="text-sm text-[#555]">Custom quote based on your product. 7–10 business days. All deliverables. One revision round included.</p>
+            <p className="text-3xl font-bold mb-1">From Rs 49k</p>
+            <p className="text-sm text-[#555]">From Rs 49k based on your brief. 7-day delivery. Master + cut-downs. One revision round included. 4 slots/month.</p>
           </div>
 
           <a
@@ -73,7 +73,7 @@ export default function BrandCommercial() {
           >
             Get Custom Quote — Call +91 70360 24586 →
           </a>
-          <p className="text-sm text-[#999] mt-3 text-center">Not sure? Start with the $79 Spec — see your product as a commercial in 48 hours. <a href="/thanks" className="underline">Get spec →</a></p>
+          <p className="text-sm text-[#999] mt-3 text-center">Not sure? Start with a Rs 4,999 concept — see your product as a commercial in 48 hours. <a href="/#contact" className="underline">Get concept →</a></p>
         </div>
 
         <h3 className="text-xl font-bold mb-4">What changes after you get these videos</h3>
@@ -85,7 +85,7 @@ export default function BrandCommercial() {
             <p><strong>Your ads actually convert.</strong> Not because you changed the targeting — because the creative doesn&apos;t look like every other ad in the feed. People stop, watch, click.</p>
           </div>
           <div className="border-l-4 border-[#1A1A1A] pl-4">
-            <p><strong>You can charge more.</strong> A $50 product with a premium commercial reads as a $90 product. Buyers pay for perception. Always have.</p>
+            <p><strong>You can charge more.</strong> A Rs 999 service with a premium commercial reads as Rs 1,999. Buyers pay for perception. Always have.</p>
           </div>
           <div className="border-l-4 border-[#1A1A1A] pl-4">
             <p><strong>Retailers and buyers take you seriously.</strong> DM a buyer with your site and they see a real brand, not a side hustle.</p>
@@ -94,7 +94,7 @@ export default function BrandCommercial() {
 
         <h3 className="text-xl font-bold mb-4">See what we&apos;ve made</h3>
         <p className="text-base leading-relaxed mb-4">
-          Spec work across categories — all AI-produced, directed like real shoots. See the results at <a href="https://instagram.com/nikocreativelabs" className="underline">@nikocreativelabs</a>.
+          Real client work (Glam Factor salon sale ad) + concepts across categories. See more at <a href="https://instagram.com/nikocreativelabs" className="underline">@nikocreativelabs</a>.
         </p>
         <p className="text-base leading-relaxed mb-4">
           <strong>Want to see your product first?</strong> That&apos;s what the $79 Spec is for. We&apos;ll make a 15-second spec of YOUR product before you commit to the full package. If you love it, we roll into the full package. If not, keep the spec — we&apos;ll refund you.
@@ -108,7 +108,7 @@ export default function BrandCommercial() {
         </div>
 
         <div className="bg-[#F5F5F0] p-5 mb-8">
-          <p className="font-bold text-base mb-2">We take 3 clients at a time.</p>
+          <p className="font-bold text-base mb-2">We take 4 clients a month.</p>
           <p className="text-sm leading-relaxed text-[#555]">
             Each package takes 7-10 days of directed work — reference gathering, shot composition, iteration, sound design. We don&apos;t batch 20 clients. When slots open, Spec clients get first priority.
           </p>
@@ -120,14 +120,14 @@ export default function BrandCommercial() {
           </p>
           <p className="text-base leading-relaxed mb-2">1. Grab the $79 Spec — we&apos;ll make a 15-second commercial of your product.</p>
           <p className="text-base leading-relaxed mb-2">2. If you love it, we&apos;ll talk about the full package and lock in your slot.</p>
-          <p className="text-base leading-relaxed mb-4">3. If not, take your $79 back. No questions.</p>
+          <p className="text-base leading-relaxed mb-4">3. If not, take your money back. No questions.</p>
           
           <a
-            href="https://checkout.dodopayments.com/buy/pdt_0NmklXEsNQRf1M9VqOsFO"
+            href="/#contact"
             target="_blank"
             className="block w-full text-center py-3 bg-[#1A1A1A] text-white font-bold text-base hover:bg-[#333] transition-colors"
           >
-            Start with $79 Spec →
+            Start with Rs 4,999 concept →
           </a>
         </div>
 

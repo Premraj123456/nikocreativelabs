@@ -5,7 +5,7 @@ export type Work = {
   tag: string;
   excerpt: string;
   year: string;
-  status: "Concept — Speculative";
+  status: "Client — Live" | "Concept — Speculative";
   color: string;
   stats: { label: string; value: string }[];
   challenge: string;
@@ -15,6 +15,27 @@ export type Work = {
 };
 
 export const works: Work[] = [
+  {
+    slug: "glam-factor-sale",
+    title: "GLAM FACTOR — Salon Sale Ad",
+    category: "Ad Commercial",
+    tag: "45s Client Ad — LIVE",
+    excerpt: "Real client: 3600 sq ft premium salon in Madhapur for sale. Shot on phone, cut in CapCut. Location + size + Call CTA. This is the proof.",
+    year: "2026 — Live",
+    status: "Client — Live",
+    color: "from-yellow-900/20 via-neutral-900 to-black",
+    stats: [
+      { label: "Runtime", value: "45s" },
+      { label: "Client", value: "Real" },
+      { label: "Goal", value: "Buyer calls" },
+    ],
+    challenge:
+      "Owner needed to sell a 3600 sq ft premium unisex salon in Madhapur — not fill chairs. Needed investors to call, not likes.",
+    solution:
+      "One spokesperson inside the real salon + busy-staff proof + black-gold premium grade. Top: SALE + brand. Bottom: Madhapur + 3600 sq ft + single Call/WhatsApp CTA. End-card with numbers. No fluff, just buyer funnel.",
+    deliverables: ["45s vertical master 9:16 (live in /videos/glam-factor-sale.mp4)", "15s DM teaser cut", "End-card with CTA", "Posting kit for Reels + Status"],
+    stack: ["Phone shoot", "CapCut cut", "Premium grade", "Direct CTA"],
+  },
   {
     slug: "noir-watch",
     title: "N°01 — MAISON NOIR",

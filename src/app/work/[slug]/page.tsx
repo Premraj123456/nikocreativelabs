@@ -22,7 +22,7 @@ export default function WorkPage({ params }: { params: { slug: string } }) {
           <div className={`h-[240px] border-b border-ink flex items-center justify-center text-center p-8 ${w.slug === "noir-watch" ? "bg-zinc-800 text-paper" : w.slug === "echo-short" ? "bg-indigo-950 text-paper" : "bg-zinc-700 text-paper"}`}>
             <div>
               <div className="font-display text-[32px]">{w.title}</div>
-              <div className="font-mono text-[11px] tracking-[0.12em] text-paper/60 mt-2">{w.category} • SPECULATIVE CONCEPT</div>
+              <div className="font-mono text-[11px] tracking-[0.12em] text-paper/60 mt-2">{w.category} • {w.status.toUpperCase()}</div>
             </div>
           </div>
           <div className="p-6 md:p-8">
@@ -38,7 +38,7 @@ export default function WorkPage({ params }: { params: { slug: string } }) {
                 <p className="font-mono text-[11px] leading-6 text-muted mt-2">{w.challenge}</p>
               </div>
               <div>
-                <div className="font-mono text-[10px] tracking-[0.12em] text-brass">SOLUTION — INVISIBLE AI</div>
+                <div className="font-mono text-[10px] tracking-[0.12em] text-brass">SOLUTION</div>
                 <p className="font-mono text-[11px] leading-6 text-muted mt-2">{w.solution}</p>
               </div>
             </div>

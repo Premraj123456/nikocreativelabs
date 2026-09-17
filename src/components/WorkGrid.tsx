@@ -7,15 +7,15 @@ export function WorkGrid() {
       <div className="mx-auto max-w-[1160px] px-6 py-12 md:py-14">
         <div className="flex flex-wrap items-end justify-between gap-4">
           <div>
-            <div className="font-mono text-[11px] tracking-[0.14em] text-faint">SELECTED WORK — [03] — SPECULATIVE CONCEPTS</div>
-            <h2 className="font-display text-[28px] md:text-[36px] leading-none tracking-[-0.03em] text-ink mt-2">Made to look shot, not generated.</h2>
+            <div className="font-mono text-[11px] tracking-[0.14em] text-faint">SELECTED WORK — [04] — 1 REAL + 3 CONCEPTS</div>
+            <h2 className="font-display text-[28px] md:text-[36px] leading-none tracking-[-0.03em] text-ink mt-2">Real work first. Concepts next.</h2>
           </div>
-          <div className="font-mono text-[11px] text-muted">Your project becomes 04</div>
+          <div className="font-mono text-[11px] text-muted">Your project becomes 05</div>
         </div>
 
-        <div className="mt-8 grid md:grid-cols-3 gap-5">
+        <div className="mt-8 grid md:grid-cols-2 lg:grid-cols-4 gap-5">
           {works.map((w, idx) => {
-            const vid = idx === 0 ? "/videos/noir.mp4" : idx === 1 ? "/videos/echo.mp4" : "/videos/velvet.mp4";
+            const vid = w.slug === "glam-factor-sale" ? "/videos/glam-factor-sale.mp4" : idx === 1 ? "/videos/noir.mp4" : idx === 2 ? "/videos/echo.mp4" : "/videos/velvet.mp4";
             return (
             <Link key={w.slug} href={`/work/${w.slug}`} className="group bg-white border border-line overflow-hidden hover:border-ink/15 hover:shadow-sm transition flex flex-col">
               <div className="relative h-[220px] overflow-hidden bg-black">
@@ -48,7 +48,7 @@ export function WorkGrid() {
         </div>
 
         <div className="mt-6 bg-surface border border-line p-4 flex flex-col md:flex-row justify-between gap-3 items-center">
-          <span className="font-mono text-[11px] text-muted">All 03 are speculative — built to show directing rigor. Your story replaces ours.</span>
+          <span className="font-mono text-[11px] text-muted">01 real client (Glam Factor) + 03 concepts to show range. Your story replaces ours.</span>
           <a href="#contact" className="bg-ink text-paper font-mono text-[11px] px-4 py-2 hover:bg-black transition">START PROJECT →</a>
         </div>
       </div>
