@@ -1,20 +1,20 @@
 import { Globe, Film, Clapperboard, TrendingUp } from "lucide-react";
 export function Services() {
   const s = [
-    { icon: Globe, n: "01", t: "High-End Websites", d: "Editorial luxury that sells. Next.js 14, 0.7s LCP, cinematic macros. Not a template — a gallery that converts.", spec: "Next.js • 0.7s • SEO" },
-    { icon: Film, n: "02", t: "AI Films & Shorts", d: "Character-locked, shot-by-shot. 18-cut continuity, 2.39:1. Festival-ready, not prompt roulette.", spec: "50 refs • 30s • 720p" },
-    { icon: Clapperboard, n: "03", t: "Ad Commercials", d: "15s / 30s, 16:9 + 9:16 + 1:1. Macro texture, physics, grade. Super Bowl feel, startup budget.", spec: "Master + cut-downs + VO" },
-    { icon: TrendingUp, n: "04", t: "Marketing Engines", d: "Lead magnet → emails → ads → analytics. One shoot, infinite distribution. Live day 7.", spec: "Funnel → Scale" },
+    { icon: Clapperboard, n: "01", t: "Ad Commercials", d: "15s / 30s ads that make you look like a national brand. Master + cut-downs for Reels, Meta, YouTube.", spec: "15s / 30s • 7-day delivery" },
+    { icon: Globe, n: "02", t: "High-End Websites", d: "Premium landing pages that match your ad. Built to convert visitors to calls/bookings. Best with a commercial.", spec: "Landing + SEO • with ad" },
+    { icon: TrendingUp, n: "03", t: "Monthly Content Engine", d: "8 fresh creatives a month from one shoot. Stay premium without shooting every week.", spec: "8 / month • retainer" },
+    { icon: Film, n: "04", t: "Films & Shorts", d: "Story-first shorts for festivals and brand stories. Limited slots — ask if it's fit.", spec: "By brief • limited" },
   ];
   return (
     <section id="services" className="bg-paper border-y border-line">
       <div className="mx-auto max-w-[1160px] px-6 py-12 md:py-14">
         <div className="flex flex-col md:flex-row md:items-end justify-between gap-4">
           <div>
-            <div className="font-mono text-[11px] tracking-[0.14em] text-faint">SERVICES — [04] — CUSTOM QUOTE ONLY</div>
-            <h2 className="font-display text-[28px] md:text-[36px] leading-none tracking-[-0.03em] text-ink mt-2">We do video-driven growth.</h2>
+            <div className="font-mono text-[11px] tracking-[0.14em] text-faint">SERVICES — [04] — FROM RS 49K • 7-DAY DELIVERY</div>
+            <h2 className="font-display text-[28px] md:text-[36px] leading-none tracking-[-0.03em] text-ink mt-2">One core: ads that sell.</h2>
           </div>
-          <p className="font-mono text-[11px] leading-5 text-muted max-w-[360px]">Pick one pillar or take the stack. Every asset is re-cut, re-used, re-scaled. Direction, not generation.</p>
+          <p className="font-mono text-[11px] leading-5 text-muted max-w-[360px]">Start with a commercial. Add a page. Stay on retainer. Films by brief only.</p>
         </div>
 
         <div className="mt-8 grid md:grid-cols-2 lg:grid-cols-4 gap-4">

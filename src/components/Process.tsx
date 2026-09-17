@@ -1,8 +1,8 @@
 export function Process() {
   const steps = [
-    { n: "01", t: "Direct", d: "Interrogate before prompt. Character, FG/MG/BG + haze, first-frame geometry, FOV°, Kelvin, audio layers. No guess.", b: ["Anti-slop interrogation", "Location map + blocking", "1–8 subjects locked"] },
-    { n: "02", t: "Generate", d: "Shot-by-shot in Auteur. Camera does not cut on its own. Timed HARD CUTs, bracket audio, continuity lock.", b: ["50 refs • 30s • 720p", "29° / 47° / 63° + 85mm", "(music) <sfx> {dialogue}"] },
-    { n: "03", t: "Launch", d: "Ship the engine, not the asset. Site + cut-downs + funnel + emails + analytics. One shoot, infinite.", b: ["16:9 + 9:16 + 1:1", "0.7s LCP • editorial", "Engine live day 7"] },
+    { n: "01", t: "Direct", d: "We lock story, shots and look before we shoot. No guessing, no endless revisions.", b: ["Story + script", "Shot list + look", "Offer + CTA locked"] },
+    { n: "02", t: "Craft", d: "We shoot, cut and grade shot-by-shot. You get a master + vertical cut-downs.", b: ["15s / 30s master", "9:16 + 1:1 cuts", "Grade + VO + captions"] },
+    { n: "03", t: "Launch", d: "We ship your ad + page + posting kit. Live in 7 days, ready to run on Meta.", b: ["Ad + page live", "Posting kit", "Live day 7"] },
   ];
   return (
     <section id="process" className="bg-white border-y border-line">
@@ -30,8 +30,8 @@ export function Process() {
         </div>
 
         <div className="mt-6 bg-ink text-paper px-5 py-4 flex flex-col md:flex-row justify-between gap-3 items-center">
-          <span className="font-mono text-[11px] tracking-[0.06em]">IF IT LOOKS LIKE AI, WE FAILED. INVISIBLE AI OR NOTHING.</span>
-          <span className="font-mono text-[10px] tracking-[0.08em] border border-white/15 px-2 py-1">LAB 001 — APPROVED</span>
+          <span className="font-mono text-[11px] tracking-[0.06em]">IF IT DOESN'T LOOK PREMIUM, WE FAILED. 7 DAYS OR NOTHING.</span>
+          <span className="font-mono text-[10px] tracking-[0.08em] border border-white/15 px-2 py-1">4 SLOTS / MONTH</span>
         </div>
       </div>
     </section>

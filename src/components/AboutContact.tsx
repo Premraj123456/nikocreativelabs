@@ -7,12 +7,12 @@ export function About() {
         <div className="grid md:grid-cols-2 gap-6">
           <div className="bg-white border border-line p-6 md:p-7">
             <div className="font-mono text-[11px] tracking-[0.12em] text-faint">ABOUT — NIKO LABS</div>
-            <h2 className="font-display text-[26px] leading-none tracking-[-0.02em] text-ink mt-2">AI-native studio,<br />human taste.</h2>
-            <p className="font-mono text-[11px] leading-6 text-muted mt-3">Niko is not a tool. It is a studio that happens to be AI-native. We design high-end websites that sell, direct films that feel shot, cut commercials that move product, and build the engine that scales them. <span className="text-ink">For brands, filmmakers, founders — anyone video-core.</span></p>
+            <h2 className="font-display text-[26px] leading-none tracking-[-0.02em] text-ink mt-2">Ads that make you<br />look national.</h2>
+            <p className="font-mono text-[11px] leading-6 text-muted mt-3">Niko is a commercial studio. We make 15s/30s ads, premium pages and monthly content that raise prices and bookings. <span className="text-ink">For salons, D2C, builders, clinics.</span></p>
             <div className="mt-5 grid grid-cols-3 gap-2 font-mono text-center">
-              <div className="border border-line bg-surface p-3"><div className="font-display text-[13px] text-ink">INVISIBLE AI</div><div className="text-[10px] tracking-[0.08em] text-faint">Promise</div></div>
-              <div className="border border-line bg-surface p-3"><div className="font-display text-[13px] text-ink">7 DAYS</div><div className="text-[10px] tracking-[0.08em] text-faint">Sprint</div></div>
-              <div className="bg-ink text-paper p-3"><div className="font-display text-[13px]">CUSTOM</div><div className="text-[10px] tracking-[0.08em] text-white/60">Quote</div></div>
+              <div className="border border-line bg-surface p-3"><div className="font-display text-[13px] text-ink">FROM 49K</div><div className="text-[10px] tracking-[0.08em] text-faint">Starting</div></div>
+              <div className="border border-line bg-surface p-3"><div className="font-display text-[13px] text-ink">7 DAYS</div><div className="text-[10px] tracking-[0.08em] text-faint">Delivery</div></div>
+              <div className="bg-ink text-paper p-3"><div className="font-display text-[13px]">4 SLOTS</div><div className="text-[10px] tracking-[0.08em] text-white/60">Per month</div></div>
             </div>
           </div>
           <div className="bg-ink text-paper p-6 md:p-7 border border-ink">
@@ -56,7 +56,7 @@ export function Contact() {
           <div className="md:col-span-5 p-6 md:p-8 bg-surface border-b md:border-b-0 md:border-r border-line">
             <div className="font-mono text-[11px] tracking-[0.12em] text-faint">REQUISITION — LAB 001</div>
             <h2 className="font-display text-[28px] leading-none tracking-[-0.02em] text-ink mt-3">Let&apos;s power<br />your brand.</h2>
-            <p className="font-mono text-[11px] leading-5 text-muted mt-3">Website, film, short, ad, or full engine. Reply in 24h. Custom quotes only.</p>
+            <p className="font-mono text-[11px] leading-5 text-muted mt-3">15s/30s ad, premium page, or monthly content. Reply in 24h. From Rs 49k.</p>
             <div className="mt-6 space-y-2">
               <a href="tel:+917036024586" className="flex justify-between items-center bg-ink text-paper px-4 py-3 font-mono text-[11px] hover:bg-black transition"><span>CALL — LAB LINE</span><span className="font-medium">+91 70360 24586</span></a>
               <a href="mailto:hello@nikocreativelabs.com" className="flex justify-between items-center border border-line bg-white px-4 py-3 font-mono text-[11px] hover:bg-surface transition"><span className="text-muted">EMAIL</span><span className="text-ink font-medium">hello@nikocreativelabs.com</span></a>
