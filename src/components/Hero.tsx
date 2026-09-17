@@ -16,7 +16,7 @@ export function Hero() {
             national brand<span className="text-brass">.</span>
           </h1>
           <p className="font-mono text-[11px] leading-6 text-muted mt-4 max-w-[560px]">
-            Commercials, websites and content for salons, skincare, builders and clinics. Delivered in 7 days.
+            Ad creatives for salons, skincare, builders and clinics. Delivered in 7 days.
           </p>
           <div className="mt-6 flex flex-wrap gap-3">
             <a href="#contact" className="inline-flex items-center gap-2 bg-ink text-paper font-mono text-[11px] tracking-[0.06em] px-6 py-3 hover:bg-black transition">Start your project <ArrowRight size={14} /></a>

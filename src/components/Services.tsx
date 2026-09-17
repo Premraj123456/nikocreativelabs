@@ -2,9 +2,9 @@ import { Globe, Film, Clapperboard, TrendingUp } from "lucide-react";
 export function Services() {
   const s = [
     { icon: Clapperboard, n: "01", t: "Commercials", d: "15s and 30s films for Reels, YouTube and Meta. Made to raise trust — and prices.", spec: "15s / 30s" },
-    { icon: Globe, n: "02", t: "Websites", d: "Quiet, premium pages that match your film — and turn views into enquiries.", spec: "Design + build" },
-    { icon: TrendingUp, n: "03", t: "Monthly Content", d: "Fresh cuts every month from a single shoot. Always new, never rushed.", spec: "Monthly" },
-    { icon: Film, n: "04", t: "Short Films", d: "Stories for festivals and brands. Slow, careful work.", spec: "By brief" },
+    { icon: Globe, n: "02", t: "Websites", d: "A page that matches your film — only with a commercial.", spec: "With film only" },
+    { icon: TrendingUp, n: "03", t: "6-8 / month Content", d: "6-8 new ad creatives a month. Same brand, always fresh.", spec: "6-8 / month" },
+    { icon: Film, n: "04", t: "Short Films", d: "Festival and brand stories. A few a year.", spec: "By brief" },
   ];
   return (
     <section id="services" className="bg-paper border-y border-line">
@@ -12,9 +12,9 @@ export function Services() {
         <div className="flex flex-col md:flex-row md:items-end justify-between gap-4">
           <div>
             <div className="font-mono text-[11px] tracking-[0.14em] text-faint">WHAT WE DO</div>
-            <h2 className="font-display text-[28px] md:text-[36px] leading-none tracking-[-0.03em] text-ink mt-2">Films, pages and content — one studio.</h2>
+            <h2 className="font-display text-[28px] md:text-[36px] leading-none tracking-[-0.03em] text-ink mt-2">Ad creatives — one studio.</h2>
           </div>
-          <p className="font-mono text-[11px] leading-5 text-muted max-w-[360px]">Most clients begin with a single commercial.</p>
+          <p className="font-mono text-[11px] leading-5 text-muted max-w-[360px]">Single films, or fresh creatives every month.</p>
         </div>
 
         <div className="mt-8 grid md:grid-cols-2 lg:grid-cols-4 gap-4">
@@ -32,7 +32,7 @@ export function Services() {
         </div>
 
         <div className="mt-6 flex flex-col md:flex-row justify-between items-start md:items-center gap-3 bg-ink text-paper px-5 py-4">
-          <span className="font-mono text-[11px]">Have something to sell? Let us film it properly.</span>
+          <span className="font-mono text-[11px]">Need creatives that sell?</span>
           <a href="#contact" className="bg-paper text-ink font-mono text-[11px] px-4 py-2 hover:bg-white transition font-medium shrink-0">Enquire →</a>
         </div>
       </div>

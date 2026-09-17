@@ -8,7 +8,7 @@ export function About() {
           <div className="bg-white border border-line p-6 md:p-7">
             <div className="font-mono text-[11px] tracking-[0.12em] text-faint">THE STUDIO</div>
             <h2 className="font-display text-[26px] leading-none tracking-[-0.02em] text-ink mt-2">A small studio<br />with high standards.</h2>
-            <p className="font-mono text-[11px] leading-6 text-muted mt-3">We are Niko — commercials, websites and monthly content for brands that want to look their best. <span className="text-ink">Based in Hyderabad, working everywhere.</span></p>
+            <p className="font-mono text-[11px] leading-6 text-muted mt-3">We are Niko Creative Labs — a creative lab for ad commercials. <span className="text-ink">Based in Hyderabad, working everywhere.</span></p>
             <div className="mt-5 grid grid-cols-3 gap-2 font-mono text-center">
               <div className="border border-line bg-surface p-3"><div className="font-display text-[13px] text-ink">HYDERABAD</div><div className="text-[10px] tracking-[0.08em] text-faint">Studio</div></div>
               <div className="border border-line bg-surface p-3"><div className="font-display text-[13px] text-ink">7 DAYS</div><div className="text-[10px] tracking-[0.08em] text-faint">Delivery</div></div>
@@ -20,7 +20,7 @@ export function About() {
             <div className="mt-4 space-y-3 font-mono text-[11px] leading-5">
               <div><span className="text-paper">Direction.</span> <span className="text-white/60">Every shot planned, nothing left to chance.</span></div>
               <div><span className="text-paper">Craft.</span> <span className="text-white/60">Light, texture and sound — the details that read as premium.</span></div>
-              <div><span className="text-paper">Follow-through.</span> <span className="text-white/60">A film, a page and content that work together.</span></div>
+              <div><span className="text-paper">Consistency.</span> <span className="text-white/60">One shoot, fresh creatives for months.</span></div>
             </div>
             <div className="mt-6 border border-white/10 bg-white/5 p-3 font-mono text-[10px] leading-4 text-white/60">Hyderabad • Working everywhere • 7-day delivery</div>
           </div>
@@ -56,7 +56,7 @@ export function Contact() {
           <div className="md:col-span-5 p-6 md:p-8 bg-surface border-b md:border-b-0 md:border-r border-line">
             <div className="font-mono text-[11px] tracking-[0.12em] text-faint">CONTACT</div>
             <h2 className="font-display text-[28px] leading-none tracking-[-0.02em] text-ink mt-3">Tell us about<br />your project.</h2>
-            <p className="font-mono text-[11px] leading-5 text-muted mt-3">Commercials, websites and monthly content. We reply within 24 hours.</p>
+            <p className="font-mono text-[11px] leading-5 text-muted mt-3">Ad creatives — single films or monthly. We reply within 24 hours.</p>
             <div className="mt-6 space-y-2">
               <a href="tel:+917036024586" className="flex justify-between items-center bg-ink text-paper px-4 py-3 font-mono text-[11px] hover:bg-black transition"><span>CALL</span><span className="font-medium">+91 70360 24586</span></a>
               <a href="mailto:hello@nikocreativelabs.com" className="flex justify-between items-center border border-line bg-white px-4 py-3 font-mono text-[11px] hover:bg-surface transition"><span className="text-muted">EMAIL</span><span className="text-ink font-medium">hello@nikocreativelabs.com</span></a>
