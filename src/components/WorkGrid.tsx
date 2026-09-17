@@ -7,10 +7,10 @@ export function WorkGrid() {
       <div className="mx-auto max-w-[1160px] px-6 py-12 md:py-14">
         <div className="flex flex-wrap items-end justify-between gap-4">
           <div>
-            <div className="font-mono text-[11px] tracking-[0.14em] text-faint">SELECTED WORK — [04] — 1 REAL + 3 CONCEPTS</div>
-            <h2 className="font-display text-[28px] md:text-[36px] leading-none tracking-[-0.03em] text-ink mt-2">Real work first. Concepts next.</h2>
+            <div className="font-mono text-[11px] tracking-[0.14em] text-faint">SELECTED WORK</div>
+            <h2 className="font-display text-[28px] md:text-[36px] leading-none tracking-[-0.03em] text-ink mt-2">Recent projects.</h2>
           </div>
-          <div className="font-mono text-[11px] text-muted">Your project becomes 05</div>
+          <div className="font-mono text-[11px] text-muted"></div>
         </div>
 
         <div className="mt-8 grid md:grid-cols-2 lg:grid-cols-4 gap-5">
@@ -48,8 +48,8 @@ export function WorkGrid() {
         </div>
 
         <div className="mt-6 bg-surface border border-line p-4 flex flex-col md:flex-row justify-between gap-3 items-center">
-          <span className="font-mono text-[11px] text-muted">01 real client (Glam Factor) + 03 concepts to show range. Your story replaces ours.</span>
-          <a href="#contact" className="bg-ink text-paper font-mono text-[11px] px-4 py-2 hover:bg-black transition">START PROJECT →</a>
+          <span className="font-mono text-[11px] text-muted">A recent client film, alongside studio concepts.</span>
+          <a href="#contact" className="bg-ink text-paper font-mono text-[11px] px-4 py-2 hover:bg-black transition">Start your project →</a>
         </div>
       </div>
     </section>

@@ -20,7 +20,7 @@ export const works: Work[] = [
     title: "GLAM FACTOR — Salon Sale Ad",
     category: "Ad Commercial",
     tag: "45s Client Ad — LIVE",
-    excerpt: "Real client: 3600 sq ft premium salon in Madhapur for sale. Shot on phone, cut in CapCut. Location + size + Call CTA. This is the proof.",
+    excerpt: "A 3,600 sq ft salon in Madhapur, filmed on location. Made to bring serious buyers to the phone.",
     year: "2026 — Live",
     status: "Client — Live",
     color: "from-yellow-900/20 via-neutral-900 to-black",
@@ -32,7 +32,7 @@ export const works: Work[] = [
     challenge:
       "Owner needed to sell a 3600 sq ft premium unisex salon in Madhapur — not fill chairs. Needed investors to call, not likes.",
     solution:
-      "One spokesperson inside the real salon + busy-staff proof + black-gold premium grade. Top: SALE + brand. Bottom: Madhapur + 3600 sq ft + single Call/WhatsApp CTA. End-card with numbers. No fluff, just buyer funnel.",
+      "A single spokesperson inside the working salon, graded black and gold. Clear location, clear size, one call to action.",
     deliverables: ["45s vertical master 9:16 (live in /videos/glam-factor-sale.mp4)", "15s DM teaser cut", "End-card with CTA", "Posting kit for Reels + Status"],
     stack: ["Phone shoot", "CapCut cut", "Premium grade", "Direct CTA"],
   },
