@@ -7,7 +7,7 @@ export const metadata: Metadata = {
 
 const NICHES = [
   {
-    href: "/funnel/salon",
+    href: "/salon",
     live: true,
     title: "Salons",
     desc: "7 hooks that filled 11 chairs last weekend. Telugu + Hindi + English. Free PDF.",
@@ -32,7 +32,7 @@ const NICHES = [
   },
 ];
 
-export default function FunnelHub() {
+export default function StartHub() {
   return (
     <main className="min-h-screen bg-[#FCFCF9] text-[#1A1A1A] font-sans">
       <div className="max-w-[640px] mx-auto px-6 py-16 md:py-24">

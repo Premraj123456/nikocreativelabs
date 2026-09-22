@@ -61,8 +61,8 @@ export async function POST(req: Request) {
       }
     }
 
-    // Redirect to the niche thank-you page
-    return NextResponse.redirect(new URL(`/funnel/${niche}/thanks`, req.url), 303);
+    // Redirect to the niche thank-you page (one route per niche, no jargon in URLs)
+    return NextResponse.redirect(new URL(`/${niche}/thanks`, req.url), 303);
   } catch (err) {
     console.error("Lead capture error:", err);
     return NextResponse.json({ error: "Something went wrong" }, { status: 500 });

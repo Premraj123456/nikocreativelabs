@@ -20,7 +20,7 @@ export default function SalonThanks() {
         </h1>
         <p className="text-lg leading-relaxed mb-8">
           Check WhatsApp in 2 minutes + email backup. Or{" "}
-          <a href="/funnel/salon-7-hooks.pdf" className="underline font-bold">
+          <a href="/salon/7-hooks.pdf" className="underline font-bold">
             download it right now →
           </a>
         </p>
@@ -65,14 +65,6 @@ export default function SalonThanks() {
           >
             Get Free Audit on WhatsApp →
           </a>
-        </div>
-
-        <div className="space-y-3 text-sm text-[#555] leading-relaxed mb-8">
-          <p><strong>What happens next:</strong></p>
-          <p>1. PDF arrives. Post 1 hook tomorrow.</p>
-          <p>2. Pack Rs.149 above — 40 hooks + scripts so you never wonder &quot;what do I post?&quot; again.</p>
-          <p>3. Ready to look premium? Premium Commercial Rs.49,000 — national-brand look in 7 days. (Starter Rs.14,999 credits toward flagship.)</p>
-          <p>4. Stay full: Rs.9,999/mo — 4 reels + 1 ad monthly.</p>
         </div>
 
         <p className="text-xs text-[#999] mt-16">
