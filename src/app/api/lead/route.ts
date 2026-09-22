@@ -10,6 +10,7 @@ export async function POST(req: Request) {
     const email = formData.get("email")?.toString();
     const phone = formData.get("phone")?.toString();
     const website = formData.get("website")?.toString();
+    const niche = formData.get("niche")?.toString() || "salon";
 
     if (!email) {
       return NextResponse.json({ error: "Email is required" }, { status: 400 });
@@ -20,7 +21,8 @@ export async function POST(req: Request) {
       email,
       phone: phone || "",
       website: website || "",
-      source: "salon_squeeze_page",
+      niche,
+      source: `${niche}_squeeze_page`,
       timestamp: new Date().toISOString(),
     };
 
@@ -50,8 +52,8 @@ export async function POST(req: Request) {
           from: "Niko Labs <hello@nikocreativelabs.com>",
           to: ["hello@nikocreativelabs.com"],
           replyTo: email,
-          subject: `New salon lead — ${email}${phone ? ` / ${phone}` : ""}`,
-          text: `New salon lead — Niko Creative Labs\n\nEmail: ${email}\nWhatsApp: ${phone || "-"}\nWebsite/IG: ${website || "-"}\nSource: salon_squeeze_page\nTime: ${lead.timestamp}\n\nReply to: ${email}`,
+          subject: `New ${niche} lead — ${email}${phone ? ` / ${phone}` : ""}`,
+          text: `New ${niche} lead — Niko Creative Labs\n\nEmail: ${email}\nWhatsApp: ${phone || "-"}\nWebsite/IG: ${website || "-"}\nNiche: ${niche}\nSource: ${lead.source}\nTime: ${lead.timestamp}\n\nReply to: ${email}`,
         });
         console.log(`[LEAD-EMAILED] ${email}`);
       } catch (e) {
@@ -59,8 +61,8 @@ export async function POST(req: Request) {
       }
     }
 
-    // Redirect to thank-you page
-    return NextResponse.redirect(new URL("/funnel/thanks", req.url), 303);
+    // Redirect to the niche thank-you page
+    return NextResponse.redirect(new URL(`/funnel/${niche}/thanks`, req.url), 303);
   } catch (err) {
     console.error("Lead capture error:", err);
     return NextResponse.json({ error: "Something went wrong" }, { status: 500 });
