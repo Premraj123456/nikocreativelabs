@@ -8,6 +8,7 @@ export async function POST(req: Request) {
   try {
     const formData = await req.formData();
     const email = formData.get("email")?.toString();
+    const phone = formData.get("phone")?.toString();
     const website = formData.get("website")?.toString();
 
     if (!email) {
@@ -17,8 +18,9 @@ export async function POST(req: Request) {
     // Log the lead
     const lead = {
       email,
+      phone: phone || "",
       website: website || "",
-      source: "squeeze_page",
+      source: "salon_squeeze_page",
       timestamp: new Date().toISOString(),
     };
 
@@ -36,7 +38,7 @@ export async function POST(req: Request) {
       console.log("[LEAD-FILE-SKIPPED]", (e as Error).message);
     }
 
-    console.log(`[LEAD] ${email}${website ? ` | ${website}` : ""}`);
+    console.log(`[LEAD] ${email}${phone ? ` | ${phone}` : ""}${website ? ` | ${website}` : ""}`);
 
     // Email the lead so it lands in the inbox (server filesystem is ephemeral)
     const apiKey = process.env.RESEND_API_KEY;
@@ -48,8 +50,8 @@ export async function POST(req: Request) {
           from: "Niko Labs <hello@nikocreativelabs.com>",
           to: ["hello@nikocreativelabs.com"],
           replyTo: email,
-          subject: `New scorecard lead — ${email}`,
-          text: `New scorecard lead — Niko Creative Labs\n\nEmail: ${email}\nWebsite/IG: ${website || "-"}\nSource: squeeze_page\nTime: ${lead.timestamp}\n\nReply to: ${email}`,
+          subject: `New salon lead — ${email}${phone ? ` / ${phone}` : ""}`,
+          text: `New salon lead — Niko Creative Labs\n\nEmail: ${email}\nWhatsApp: ${phone || "-"}\nWebsite/IG: ${website || "-"}\nSource: salon_squeeze_page\nTime: ${lead.timestamp}\n\nReply to: ${email}`,
         });
         console.log(`[LEAD-EMAILED] ${email}`);
       } catch (e) {
@@ -58,7 +60,7 @@ export async function POST(req: Request) {
     }
 
     // Redirect to thank-you page
-    return NextResponse.redirect(new URL("/thanks", req.url), 303);
+    return NextResponse.redirect(new URL("/funnel/thanks", req.url), 303);
   } catch (err) {
     console.error("Lead capture error:", err);
     return NextResponse.json({ error: "Something went wrong" }, { status: 500 });

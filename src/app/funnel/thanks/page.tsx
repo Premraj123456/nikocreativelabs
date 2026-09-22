@@ -1,77 +1,82 @@
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Your Scorecard Is Ready — Niko Creative Labs",
+  title: "Your 7 Hooks Are On The Way — Niko Creative Labs",
 };
 
-export default function Thanks() {
+const PACK_LINK = "https://checkout.dodopayments.com/buy/pdt_0No9OjEaOMNJun6fxCNKx";
+const WA_AUDIT =
+  "https://wa.me/917036024586?text=Hi%20Niko!%20I%20just%20grabbed%20the%207%20hooks%20PDF.%20My%20salon%20IG%20is%3A%20";
+const WA_BUMP =
+  "https://wa.me/917036024586?text=Hi%20Niko!%20I%20bought%20the%20Rs.149%20pack.%20I%20want%20the%20Rs.999%20done-for-you%20reel.%20My%20footage%20is%20ready.";
+
+export default function SalonThanks() {
   return (
     <main className="min-h-screen bg-[#FCFCF9] text-[#1A1A1A] font-sans">
       <div className="max-w-[640px] mx-auto px-6 py-16 md:py-24">
 
         <h1 className="text-[1.75rem] md:text-[2.25rem] leading-[1.15] font-bold mb-4">
-          Check your inbox.
+          Thanks — your 7 hooks are on the way.
         </h1>
-        <p className="text-lg leading-relaxed mb-2">
-          The Brand Video Scorecard is on its way. Should arrive in under a minute.
+        <p className="text-lg leading-relaxed mb-8">
+          Check WhatsApp in 2 minutes + email backup. Or{" "}
+          <a href="/funnel/salon-7-hooks.pdf" className="underline font-bold">
+            download it right now →
+          </a>
         </p>
         <p className="text-lg leading-relaxed mb-8">
-          Open it, pull up your most recent product video, and answer the 8 questions. You&apos;ll know in 3 minutes whether your video is helping or hurting.
+          Pick 1 hook tonight, shoot 15 seconds, post tomorrow morning. And there&apos;s something you should know...
         </p>
 
         <div className="border-2 border-[#1A1A1A] p-6 md:p-8 mb-8">
-          <h2 className="text-xl font-bold mb-2">And there&apos;s something you should know...</h2>
+          <h2 className="text-xl font-bold mb-2">Don&apos;t stop at 7. Get all 40.</h2>
           <p className="text-base leading-relaxed mb-4">
-            That scorecard told you <strong>whether</strong> your video is the problem. But even if you scored 8 out of 8 NOs — it doesn&apos;t show you what&apos;s <strong>possible</strong>.
-          </p>
-          <p className="text-base leading-relaxed mb-4">
-            Most founders have never seen their product treated like a real brand. Never seen it with proper lighting, composition, a story. They don&apos;t know what they&apos;re missing — so they don&apos;t know how much money they&apos;re leaving on the table.
-          </p>
-          <p className="text-base leading-relaxed mb-4">
-            <strong>We&apos;ll show you.</strong> Send us your product link and brand colors. Within 48 hours, we&apos;ll send back a 15-second AI-produced spec commercial of YOUR product. No stock footage. No templates. Your actual product, directed like a real shoot.
+            The free PDF fixes this weekend. The <strong>Scroll-Starter Pack</strong> fixes every week: 40 Telugu + Hindi hooks, 10 ready-to-shoot 15-sec scripts with captions, 10 CapCut templates, and the 7-day Telugu-AM / Hindi-PM posting plan. Shoot tonight, get DMs this week. Instant download.
           </p>
 
           <div className="bg-[#F5F5F0] p-4 mb-5">
-            <p className="text-3xl font-bold mb-1">$79</p>
-            <p className="text-sm text-[#555]">One-time. Your product, a 15-second spec commercial, in 48 hours.</p>
+            <p className="text-3xl font-bold mb-1">Rs. 149</p>
+            <p className="text-sm text-[#555]">One-time. Instant download. Closes Sunday.</p>
           </div>
 
-          <p className="text-sm leading-relaxed mb-5 text-[#555]">
-            <strong>Why $79?</strong> Two reasons. One: it&apos;s low enough you don&apos;t have to think about it. Two: it filters out people who aren&apos;t serious. At $79, you&apos;re saying &quot;I care enough to see what&apos;s possible.&quot; That&apos;s who we want to work with.
-          </p>
-
           <a
-            href="https://checkout.dodopayments.com/buy/pdt_0NmklXEsNQRf1M9VqOsFO"
+            href={PACK_LINK}
             target="_blank"
             rel="noopener noreferrer"
             className="block w-full text-center py-3 bg-[#1A1A1A] text-white font-bold text-base hover:bg-[#333] transition-colors"
           >
-            Get Your 15-Second Spec — $79 →
+            Get The Pack — Rs.149 →
           </a>
 
-          <p className="text-sm text-[#999] mt-3">
-            <strong>And if you don&apos;t like it?</strong> Keep it anyway. If the spec doesn&apos;t make you say &quot;damn, my product can look like that?&quot;, just tell us and we&apos;ll refund you. We&apos;re that confident.
+          <p className="text-sm text-[#555] mt-4">
+            <strong>Bump:</strong> bought the pack? We&apos;ll do one reel for you — send phone footage, back in 48hrs (Rs.999).{" "}
+            <a href={WA_BUMP} className="underline">Claim on WhatsApp →</a>
           </p>
+        </div>
+
+        <div className="border border-[#ccc] p-6 mb-8">
+          <p className="font-bold text-base mb-2">Want it for YOUR salon, free?</p>
+          <p className="text-sm leading-relaxed text-[#555] mb-4">
+            Get my free 30-sec voice audit — 3 hook ideas for your chairs. Send your Instagram link on WhatsApp.
+          </p>
+          <a
+            href={WA_AUDIT}
+            className="block w-full text-center py-3 border-2 border-[#1A1A1A] font-bold text-base hover:bg-[#eee] transition-colors"
+          >
+            Get Free Audit on WhatsApp →
+          </a>
         </div>
 
         <div className="space-y-3 text-sm text-[#555] leading-relaxed mb-8">
           <p><strong>What happens next:</strong></p>
-          <p>1. Scorecard arrives. Go through it on your current video.</p>
-          <p>2. If you scored 3+ NOs — grab the $79 Spec above. See your product like you&apos;ve never seen it.</p>
-          <p>3. If you love the spec — we&apos;ll talk about the full commercial package.</p>
-          <p>4. If not — keep the spec, get your $79 back. No hard feelings.</p>
-        </div>
-
-        <div className="space-y-4 text-sm text-[#555] leading-relaxed border-t border-[#ddd] pt-6">
-          <p><strong>&quot;Who are you?&quot;</strong></p>
-          <p>Niko Creative Labs — we make brands look expensive without the $15k–$40k production bill. See spec work at <a href="https://instagram.com/nikocreativelabs" className="underline">@nikocreativelabs</a>.</p>
-          
-          <p><strong>&quot;Is this just AI slop?&quot;</strong></p>
-          <p>No. Each spec is directed — reference images, shot composition, pacing, color, sound design. The AI is the camera. We&apos;re the directors. The difference shows.</p>
+          <p>1. PDF arrives. Post 1 hook tomorrow.</p>
+          <p>2. Pack Rs.149 above — 40 hooks + scripts so you never wonder &quot;what do I post?&quot; again.</p>
+          <p>3. Ready to look premium? Premium Commercial Rs.49,000 — national-brand look in 7 days. (Starter Rs.14,999 credits toward flagship.)</p>
+          <p>4. Stay full: Rs.9,999/mo — 4 reels + 1 ad monthly.</p>
         </div>
 
         <p className="text-xs text-[#999] mt-16">
-          Niko Creative Labs. If the scorecard doesn&apos;t arrive, check spam and mark as not spam. Questions? <a href="tel:+917036024586" className="underline">Call +91 70360 24586</a>.
+          Niko Creative Labs — Hyderabad. Questions? <a href="https://wa.me/917036024586" className="underline">WhatsApp +91 70360 24586</a>.
         </p>
 
       </div>

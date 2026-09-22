@@ -73,7 +73,7 @@ export default function BrandCommercial() {
           >
             Get Custom Quote — Call +91 70360 24586 →
           </a>
-          <p className="text-sm text-[#999] mt-3 text-center">Not sure? Start with a Rs 4,999 concept — see your product as a commercial in 48 hours. <a href="/#contact" className="underline">Get concept →</a></p>
+          <p className="text-sm text-[#999] mt-3 text-center">Not sure? Start with the Rs 149 Scroll-Starter Pack — 40 hooks + scripts today. <a href="https://checkout.dodopayments.com/buy/pdt_0No9OjEaOMNJun6fxCNKx" target="_blank" rel="noopener noreferrer" className="underline">Get pack →</a> Or we&apos;ll do one reel for you, Rs 999 in 48hrs.</p>
         </div>
 
         <h3 className="text-xl font-bold mb-4">What changes after you get these videos</h3>
@@ -97,7 +97,7 @@ export default function BrandCommercial() {
           Real client work (Glam Factor salon sale ad) + concepts across categories. See more at <a href="https://instagram.com/nikocreativelabs" className="underline">@nikocreativelabs</a>.
         </p>
         <p className="text-base leading-relaxed mb-4">
-          <strong>Want to see your product first?</strong> That&apos;s what the $79 Spec is for. We&apos;ll make a 15-second spec of YOUR product before you commit to the full package. If you love it, we roll into the full package. If not, keep the spec — we&apos;ll refund you.
+          <strong>Want to see your salon first?</strong> That&apos;s what the Rs 999 reel is for. Send phone footage — we&apos;ll send back a finished scroll-stopper in 48 hours. If you love it, we roll into the full package. Starter Rs 14,999 credits toward the Rs 49k flagship within 14 days.
         </p>
 
         <div className="border-2 border-[#1A1A1A] p-5 mb-8">
@@ -118,16 +118,17 @@ export default function BrandCommercial() {
           <p className="text-base leading-relaxed mb-4">
             <strong>Here&apos;s what to do:</strong>
           </p>
-          <p className="text-base leading-relaxed mb-2">1. Grab the $79 Spec — we&apos;ll make a 15-second commercial of your product.</p>
+          <p className="text-base leading-relaxed mb-2">1. Grab the Rs 149 pack — or the Rs 999 done-for-you reel.</p>
           <p className="text-base leading-relaxed mb-2">2. If you love it, we&apos;ll talk about the full package and lock in your slot.</p>
           <p className="text-base leading-relaxed mb-4">3. If not, take your money back. No questions.</p>
           
           <a
-            href="/#contact"
+            href="https://checkout.dodopayments.com/buy/pdt_0No9OjEaOMNJun6fxCNKx"
             target="_blank"
+            rel="noopener noreferrer"
             className="block w-full text-center py-3 bg-[#1A1A1A] text-white font-bold text-base hover:bg-[#333] transition-colors"
           >
-            Start with Rs 4,999 concept →
+            Start with Rs 149 pack →
           </a>
         </div>
 
