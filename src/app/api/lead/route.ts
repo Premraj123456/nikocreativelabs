@@ -66,7 +66,7 @@ export async function POST(req: Request) {
           from: "Prem <hello@nikocreativelabs.com>",
           to: [email],
           subject: `Your ${magnet.title} (free PDF)`,
-          text: `Hey,\n\nYour free PDF is here: ${magnet.file}\n\nPick 1 hook tonight, shoot 15 seconds on your phone, post tomorrow morning.\n\nTelugu morning, Hindi evening — test what fills YOUR chairs.\n\n— Prem, Niko Creative Labs (Hyderabad)\n\nP.S. Want all 40 hooks + scripts? The Scroll-Starter Pack (Rs.149) is here: https://checkout.dodopayments.com/buy/pdt_0No9OjEaOMNJun6fxCNKx`,
+          text: `Hey,\n\nAs promised — your free PDF:\n${magnet.file}\n\nPick 1 hook tonight, shoot 15 seconds on your phone, post tomorrow morning.\n\nTelugu morning, Hindi evening — test what fills YOUR chairs.\n\n— Prem, Niko Creative Labs, Hyderabad`,
         });
         console.log(`[MAGNET-DELIVERED] ${email}`);
       } catch (e) {
