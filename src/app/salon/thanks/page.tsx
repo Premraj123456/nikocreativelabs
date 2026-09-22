@@ -16,10 +16,10 @@ export default function SalonThanks() {
       <div className="max-w-[640px] mx-auto px-6 py-16 md:py-24">
 
         <h1 className="text-[1.75rem] md:text-[2.25rem] leading-[1.15] font-bold mb-4">
-          Thanks — your 7 hooks are on the way.
+          Check your inbox.
         </h1>
         <p className="text-lg leading-relaxed mb-8">
-          Check WhatsApp in 2 minutes + email backup. Or{" "}
+          Your 7 hooks are on the way — should arrive in under a minute. Or{" "}
           <a href="/salon/7-hooks.pdf" className="underline font-bold">
             download it right now →
           </a>

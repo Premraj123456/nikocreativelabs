@@ -29,7 +29,7 @@ export default function SalonFunnel() {
         <div className="border-2 border-[#1A1A1A] p-6 md:p-8 mb-8">
           <h2 className="text-xl font-bold mb-2">7 Hooks That Filled 11 Chairs</h2>
           <p className="text-base leading-relaxed mb-4">
-            Free 1-page PDF. Weekend-slot hooks, hairfall hooks, bridal hooks — Telugu + Hindi + English with shooting notes. Instant on WhatsApp.
+            Free 1-page PDF. Weekend-slot hooks, hairfall hooks, bridal hooks — Telugu + Hindi + English with shooting notes. In your inbox in under a minute.
           </p>
           <ul className="space-y-2 mb-6 text-base">
             <li>✓ Telugu morning, Hindi evening — test what fills YOUR chairs</li>
@@ -44,18 +44,9 @@ export default function SalonFunnel() {
           >
             <input type="hidden" name="niche" value="salon" />
             <input
-              type="tel"
-              name="phone"
-              placeholder="WhatsApp number (10 digits)"
-              required
-              pattern="[0-9]{10}"
-              maxLength={10}
-              className="w-full px-4 py-3 border-2 border-[#1A1A1A] bg-white text-base focus:outline-none focus:ring-2 focus:ring-[#1A1A1A]"
-            />
-            <input
               type="email"
               name="email"
-              placeholder="Email (PDF backup)"
+              placeholder="Your email — PDF lands in under a minute"
               required
               className="w-full px-4 py-3 border-2 border-[#1A1A1A] bg-white text-base focus:outline-none focus:ring-2 focus:ring-[#1A1A1A]"
             />
@@ -67,7 +58,7 @@ export default function SalonFunnel() {
             </button>
           </form>
 
-          <p className="text-sm text-[#666] mt-3">No spam. PDF in seconds on WhatsApp + email.</p>
+          <p className="text-sm text-[#666] mt-3">No spam. One email with the PDF. Unsubscribe anytime.</p>
         </div>
 
         <div className="space-y-4 text-sm text-[#555] leading-relaxed">

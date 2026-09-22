@@ -4,11 +4,17 @@ import path from "path";
 
 const LEADS_FILE = path.join(process.cwd(), "data", "leads.json");
 
+const MAGNETS: Record<string, { title: string; file: string }> = {
+  salon: {
+    title: "7 Hooks That Filled 11 Chairs",
+    file: "https://nikocreativelabs.com/salon/7-hooks.pdf",
+  },
+};
+
 export async function POST(req: Request) {
   try {
     const formData = await req.formData();
     const email = formData.get("email")?.toString();
-    const phone = formData.get("phone")?.toString();
     const website = formData.get("website")?.toString();
     const niche = formData.get("niche")?.toString() || "salon";
 
@@ -19,7 +25,6 @@ export async function POST(req: Request) {
     // Log the lead
     const lead = {
       email,
-      phone: phone || "",
       website: website || "",
       niche,
       source: `${niche}_squeeze_page`,
@@ -40,22 +45,30 @@ export async function POST(req: Request) {
       console.log("[LEAD-FILE-SKIPPED]", (e as Error).message);
     }
 
-    console.log(`[LEAD] ${email}${phone ? ` | ${phone}` : ""}${website ? ` | ${website}` : ""}`);
+    console.log(`[LEAD] ${email}${website ? ` | ${website}` : ""} | ${niche}`);
 
-    // Email the lead so it lands in the inbox (server filesystem is ephemeral)
+    // Email: notify us + deliver the magnet to the lead
     const apiKey = process.env.RESEND_API_KEY;
     if (apiKey) {
       try {
         const { Resend } = await import("resend");
         const resend = new Resend(apiKey);
+        const magnet = MAGNETS[niche] || MAGNETS.salon;
         await resend.emails.send({
           from: "Niko Labs <hello@nikocreativelabs.com>",
           to: ["hello@nikocreativelabs.com"],
           replyTo: email,
-          subject: `New ${niche} lead — ${email}${phone ? ` / ${phone}` : ""}`,
-          text: `New ${niche} lead — Niko Creative Labs\n\nEmail: ${email}\nWhatsApp: ${phone || "-"}\nWebsite/IG: ${website || "-"}\nNiche: ${niche}\nSource: ${lead.source}\nTime: ${lead.timestamp}\n\nReply to: ${email}`,
+          subject: `New ${niche} lead — ${email}`,
+          text: `New ${niche} lead — Niko Creative Labs\n\nEmail: ${email}\nWebsite/IG: ${website || "-"}\nNiche: ${niche}\nSource: ${lead.source}\nTime: ${lead.timestamp}\n\nReply to: ${email}`,
         });
         console.log(`[LEAD-EMAILED] ${email}`);
+        await resend.emails.send({
+          from: "Prem <hello@nikocreativelabs.com>",
+          to: [email],
+          subject: `Your ${magnet.title} (free PDF)`,
+          text: `Hey,\n\nYour free PDF is here: ${magnet.file}\n\nPick 1 hook tonight, shoot 15 seconds on your phone, post tomorrow morning.\n\nTelugu morning, Hindi evening — test what fills YOUR chairs.\n\n— Prem, Niko Creative Labs (Hyderabad)\n\nP.S. Want all 40 hooks + scripts? The Scroll-Starter Pack (Rs.149) is here: https://checkout.dodopayments.com/buy/pdt_0No9OjEaOMNJun6fxCNKx`,
+        });
+        console.log(`[MAGNET-DELIVERED] ${email}`);
       } catch (e) {
         console.error("[LEAD-EMAIL-FAILED]", e);
       }
