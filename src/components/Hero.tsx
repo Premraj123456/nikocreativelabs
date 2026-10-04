@@ -17,7 +17,7 @@ export function Hero() {
           </p>
           <div className="mt-6 flex flex-wrap gap-3">
             <a href="#contact" className="inline-flex items-center gap-2 bg-ink text-paper font-mono text-[11px] tracking-[0.06em] px-6 py-3 hover:bg-black transition">Start your project <ArrowRight size={14} /></a>
-            <a href="/meridian" target="_blank" rel="noopener" className="inline-flex items-center gap-2 border border-line bg-white font-mono text-[11px] tracking-[0.06em] px-6 py-3 hover:bg-surface transition text-ink">Walk the MERIDIAN site <ArrowUpRight size={14} /></a>
+            <a href="/meridian/" target="_blank" rel="noopener" className="inline-flex items-center gap-2 border border-line bg-white font-mono text-[11px] tracking-[0.06em] px-6 py-3 hover:bg-surface transition text-ink">Walk the MERIDIAN site <ArrowUpRight size={14} /></a>
           </div>
           <div className="mt-6 flex gap-6 font-mono text-[10px] tracking-[0.1em] text-faint">
             <span>FROM $5K</span><span>•</span><span>48-HR DELIVERY</span>
@@ -25,7 +25,7 @@ export function Hero() {
         </div>
 
         <div className="mt-8 md:mt-10 border border-line bg-white p-2 md:p-3">
-          <a href="/meridian" target="_blank" rel="noopener" className="relative block aspect-[16/9] md:aspect-[21/9] bg-[#0A0A0C] overflow-hidden group/site">
+          <a href="/meridian/" target="_blank" rel="noopener" className="relative block aspect-[16/9] md:aspect-[21/9] bg-[#0A0A0C] overflow-hidden group/site">
             <img src="/meridian-poster.jpg" alt="MERIDIAN — live 3D website demo" className="absolute inset-0 h-full w-full object-cover object-center" />
             <div className="absolute inset-0 bg-gradient-to-t from-black/50 via-transparent to-transparent pointer-events-none" />
             <span className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 inline-flex items-center gap-2 bg-paper text-ink font-mono text-[11px] tracking-[0.06em] px-6 py-3 group-hover/site:scale-105 transition shadow-lg">

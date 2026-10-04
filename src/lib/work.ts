@@ -27,7 +27,7 @@ export const works: Work[] = [
     status: "Live Demo",
     color: "from-amber-900/20 via-neutral-900 to-black",
     poster: "/meridian-poster.jpg",
-    demo: "/meridian",
+    demo: "/meridian/",
     stats: [
       { label: "Delivery", value: "48 hrs" },
       { label: "Price", value: "From $5k" },
