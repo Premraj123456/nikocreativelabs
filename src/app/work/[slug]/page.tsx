@@ -20,7 +20,11 @@ export default function WorkPage({ params }: { params: { slug: string } }) {
             <span>{w.year}</span>
           </div>
           <div className="border-b border-ink bg-black">
-            <video controls playsInline preload="metadata" className="w-full max-h-[70vh] bg-black" src={w.slug === "glam-factor-sale" ? "/videos/glam-factor-sale.mp4" : w.slug === "noir-watch" ? "/videos/noir.mp4" : w.slug === "echo-short" ? "/videos/echo.mp4" : "/videos/velvet.mp4"} />
+            <img src={w.poster} alt={w.title} className="w-full max-h-[70vh] object-cover bg-black" />
+            <a href={w.demo} target="_blank" rel="noopener" className="flex items-center justify-between bg-brass text-ink px-4 py-3 font-mono text-[11px] tracking-[0.08em] hover:brightness-95 transition">
+              <span>THIS IS A WORKING SITE — SCROLL IT YOURSELF</span>
+              <span className="font-medium">OPEN LIVE SITE →</span>
+            </a>
           </div>
           <div className="border-b border-ink flex items-center justify-center text-center p-8 bg-surface">
             <div>
@@ -60,7 +64,7 @@ export default function WorkPage({ params }: { params: { slug: string } }) {
               </div>
             </div>
             <div className="mt-8 border border-ink bg-ink text-paper p-4 flex flex-wrap justify-between items-center gap-3">
-              <div className="font-display text-[16px]">Have something to sell? Let's film it properly.</div>
+              <div className="font-display text-[16px]">Need a site people remember? Let&apos;s build it.</div>
               <a href="/#contact" className="bg-paper text-ink font-mono text-[11px] px-4 py-2">Enquire →</a>
             </div>
           </div>

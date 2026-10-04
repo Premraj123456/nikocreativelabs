@@ -12,7 +12,7 @@ export function Header() {
           <span className="hidden sm:inline font-mono text-[10px] tracking-[0.12em] text-muted border-l border-line pl-3 ml-1">CREATIVE LABS</span>
         </a>
         <nav className="hidden md:flex items-center gap-7 font-mono text-[11px] tracking-[0.08em] text-muted">
-          <a href="#services" className="hover:text-ink transition">Services</a>
+          <a href="#offer" className="hover:text-ink transition">Offer</a>
           <a href="#work" className="hover:text-ink transition">Work</a>
           <a href="#process" className="hover:text-ink transition">Process</a>
         </nav>
@@ -24,7 +24,7 @@ export function Header() {
       </div>
       {o && (
         <div className="md:hidden border-t border-line bg-paper px-6 py-4 space-y-1 font-mono text-[13px]">
-          <a href="#services" onClick={() => setO(false)} className="block py-3 border-b border-line">Services</a>
+          <a href="#offer" onClick={() => setO(false)} className="block py-3 border-b border-line">Offer</a>
           <a href="#work" onClick={() => setO(false)} className="block py-3 border-b border-line">Work</a>
           <a href="#process" onClick={() => setO(false)} className="block py-3 border-b border-line">Process</a>
           <a href="#contact" onClick={() => setO(false)} className="block bg-ink text-paper text-center py-3 mt-3">START PROJECT</a>

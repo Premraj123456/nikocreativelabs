@@ -7,14 +7,14 @@ const mono = JetBrains_Mono({ subsets: ["latin"], variable: "--font-mono", displ
 export const metadata: Metadata = {
   metadataBase: new URL("https://nikocreativelabs.com"),
   title: {
-    default: "Niko Creative Labs — AI Brand Commercials That Actually Convert",
+    default: "Niko Creative Labs — 3D Websites That Stand Out",
     template: "%s — Niko Creative Labs",
   },
-  description: "Your product deserves better than phone footage. AI-produced brand commercials, human-directed. See the difference. Free scorecard.",
+  description: "Scroll-driven 3D websites from $5k, delivered in 48 hours. One offer. Watch the MERIDIAN demo.",
   icons: { icon: "/brand/niko-monogram.svg", shortcut: "/brand/niko-monogram.svg", apple: "/brand/niko-monogram.svg" },
   openGraph: {
-    title: "Niko Creative Labs — AI Brand Commercials",
-    description: "AI-produced brand commercials for DTC founders. Not slop. Real creative direction, AI production.",
+    title: "Niko Creative Labs — 3D Websites That Stand Out",
+    description: "Scroll-driven 3D websites from $5k. Delivered in 48 hours.",
     siteName: "Niko Creative Labs",
     type: "website",
   },

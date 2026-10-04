@@ -25,7 +25,7 @@ export async function POST(req: NextRequest) {
         text: `New project inquiry — Niko Creative Labs
 
 Name: ${name}
-Brand/Film: ${brand || "-"}
+Brand: ${brand || "-"}
 Email: ${email}
 Phone: ${phone || "-"}
 Needs: ${needsStr}
