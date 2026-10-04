@@ -8,7 +8,7 @@ export function WorkGrid() {
         <div className="flex flex-wrap items-end justify-between gap-4">
           <div>
             <div className="font-mono text-[11px] tracking-[0.14em] text-faint">SELECTED WORK</div>
-            <h2 className="font-display text-[28px] md:text-[36px] leading-none tracking-[-0.03em] text-ink mt-2">See for yourself.</h2>
+            <h2 className="font-display text-[28px] md:text-[36px] leading-none tracking-[-0.03em] text-ink mt-2">Work.</h2>
           </div>
           <div className="font-mono text-[11px] text-muted"></div>
         </div>
