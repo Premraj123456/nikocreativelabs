@@ -10,7 +10,7 @@ import { Footer } from "@/components/Footer";
 export const metadata: Metadata = {
   title: "Niko Creative Labs — 3D Websites That Stand Out | Delivered in 48 Hours",
   description:
-    "Scroll-driven 3D websites from $5k. One offer, live in 48 hours. Watch the MERIDIAN demo.",
+    "Scroll-driven 3D websites from $5k. One offer, live in 48 hours.",
 };
 
 export default function Home() {
