@@ -39,6 +39,8 @@ img{max-width:100%;display:block}
 #viewer .hint{bottom:12px;left:20px;background:rgba(0,0,0,.55);color:#fff}
 #mode{position:absolute;bottom:12px;right:12px;z-index:5;background:var(--paper);border:1px solid var(--ink);font-family:var(--mono);font-size:10px;letter-spacing:.2em;padding:8px 14px;cursor:pointer}
 #mode:hover{background:var(--ink);color:var(--paper)}
+#swap{position:absolute;bottom:52px;right:12px;z-index:5;background:var(--acc);border:1px solid var(--acc);color:#fff;font-family:var(--mono);font-size:10px;letter-spacing:.2em;padding:8px 14px;cursor:pointer}
+#swap:hover{background:var(--ink);border-color:var(--ink)}
 
 /* ledger */
 #ledger{border-bottom:1px solid var(--ink)}
@@ -94,7 +96,8 @@ footer{padding:16px 20px;font-size:10px;letter-spacing:.18em;color:var(--mute);d
   <span class="tag live">● LIVE 3D</span>
   <span class="tag fc" id="fcount">BEAT 0 / 6</span>
   <span class="tag hint">ONE SITE. SIX BEATS. ZERO CUTS.</span>
-  <button id="mode" type="button">NIGHT</button>
+      <button id="mode" type="button">NIGHT</button>
+      <button id="swap" type="button" style="display:none">REAL 3D</button>
 </div>
 
 <div id="ledger">
@@ -572,6 +575,11 @@ addEventListener('mousemove', e=>{
   mouse.tx = (e.clientX/innerWidth - .5);
   mouse.ty = (e.clientY/innerHeight - .5);
 });
+addEventListener('touchmove', e=>{
+  const t = e.touches[0]; if(!t) return;
+  mouse.tx = (t.clientX/innerWidth - .5);
+  mouse.ty = (t.clientY/innerHeight - .5);
+},{passive:true});
 function readScroll(){
   const max = document.documentElement.scrollHeight - innerHeight;
   scrollTarget = max>0 ? scrollY/max : 0;
@@ -608,7 +616,7 @@ function tick(){
     };
   }
 
-  const px = mouse.x*3.2, py = -mouse.y*2.0;
+  const px = mouse.x*4.2, py = -mouse.y*2.6;
   camera.position.set(camPos.x + px, camPos.y + py, camPos.z);
   camera.lookAt(camLook.x + px*.35, camLook.y + py*.3, camLook.z);
   if(Math.abs(camera.fov-camFov)>.01){ camera.fov = camFov; camera.updateProjectionMatrix(); }
@@ -665,11 +673,39 @@ tick();
       try{ const r = await fetch(f,{method:'HEAD'}); if(r.ok){ start(f); return; } }catch(e){}
     }
   })();
+  const swapBtn = document.getElementById('swap');
+  const modeBtn2 = document.getElementById('mode');
+  let hasFilm = false, filmOn = false;
+  window.__setMode = (m)=>{
+    filmOn = (m==='film' && hasFilm);
+    if(filmOn){ v.style.display='block'; canvas.style.display='none'; }
+    else { v.style.display='none'; canvas.style.display='block'; }
+    window.__film = filmOn;
+    document.querySelector('#viewer .live').textContent = filmOn ? '● LIVE FILM' : '● LIVE 3D';
+    swapBtn.textContent = filmOn ? 'REAL 3D' : 'FILM';
+    if(modeBtn2) modeBtn2.style.display = filmOn ? 'none' : '';
+  };
+  swapBtn.addEventListener('click',()=>window.__setMode(filmOn ? '3d' : 'film'));
+  // fake depth on the film: drift against the pointer
+  const pv = {x:0,y:0,tx:0,ty:0};
+  addEventListener('mousemove', e=>{
+    pv.tx = (e.clientX/innerWidth - .5); pv.ty = (e.clientY/innerHeight - .5);
+  });
+  addEventListener('touchmove', e=>{
+    const t=e.touches[0]; if(!t) return;
+    pv.tx = (t.clientX/innerWidth - .5); pv.ty = (t.clientY/innerHeight - .5);
+  },{passive:true});
+  (function drift(){
+    requestAnimationFrame(drift);
+    if(!filmOn) return;
+    pv.x += (pv.tx-pv.x)*.06; pv.y += (pv.ty-pv.y)*.06;
+    v.style.transform = 'scale(1.07) translate3d('+(-pv.x*26)+'px,'+(-pv.y*20)+'px,0)';
+  })();
   function start(src){
-    v.src = src; v.style.display='block';
-    canvas.style.display='none';
-    document.querySelector('#viewer .live').textContent = '● LIVE FILM';
-    window.__film=true; v.pause();
+    v.src = src; hasFilm = true;
+    if(swapBtn) swapBtn.style.display='';
+    v.pause();
+    window.__setMode('film');
     let dur=0, target=0;
     v.addEventListener('loadedmetadata',()=>{ dur=v.duration||0; });
     function read(){
